@@ -1,0 +1,3 @@
+admin,admin123,manager
+user1,userpass,employee
+sara,sara123,employee
