@@ -25,6 +25,7 @@ public interface CoordinatorInterface extends Remote{
     String findFileLocation(String fileName) throws RemoteException;
     int getNodePort(String nodeName) throws RemoteException;
     public void registerNode(String nodeId, NodeInterface nodeStub)throws RemoteException;
+    User getUserByUserName(String username)throws RemoteException;
 
 
 

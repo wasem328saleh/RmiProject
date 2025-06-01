@@ -72,6 +72,12 @@ public class CoordinatorImpl extends UnicastRemoteObject implements CoordinatorI
         registeredNodes.put(nodeId, nodeStub);
         nodeLoadMap.put(nodeId, 0);
     }
+
+    @Override
+    public User getUserByUserName(String username) throws RemoteException {
+        return users.get(username);
+    }
+
     // ✅ دالة للحصول على رقم المنفذ من اسم العقدة
     @Override
     public int getNodePort(String nodeName) throws RemoteException {
